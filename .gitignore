@@ -1,0 +1,17 @@
+# 编译产物
+build/
+*.o
+*.out
+echo_server
+
+# 日志文件
+logs/
+
+# 临时文件
+*~
+*.swp
+.DS_Store
+
+# IDE配置文件
+.vscode/
+.idea/
