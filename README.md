@@ -8,8 +8,8 @@
 http-server/
 ├── src/ # 源代码目录
 │ ├── main.cpp # 主程序入口
-│ ├── thread_pool.h # 线程池头文件（待实现）
-│ └── thread_pool.cpp # 线程池实现（待实现）
+│ ├── thread_pool.h # 线程池头文件
+│ └── thread_pool.cpp # 线程池实现
 ├── build/ # 编译输出目录
 ├── Makefile # 一键编译脚本
 ├── README.md # 项目说明
@@ -40,13 +40,6 @@ make run
 # 后台运行（部署用，关闭终端不停止）
 nohup ./build/echo_server > server.log 2>&1 &
 ```
-
-## 功能进度
-- [x] 单线程TCP Echo服务器
-- [x] 工程化规范目录
-- [x] C++线程池高并发
-- [x] HTTP 协议解析，支持静态资源返回
-- [x] 完善分级日志系统
 
 ## 运行说明
 默认监听8090 端口，可在src/main.cpp修改PORT常量
